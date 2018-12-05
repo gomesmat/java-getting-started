@@ -34,7 +34,8 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
-
+  private Fatorial fa = new Fatorial();
+  
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
@@ -52,6 +53,16 @@ public class Main {
      }
      model.put("sequencia", sequencia);
     return "fibo";
+  }
+  
+  @RequestMapping("/fato")
+  String fato(Map<String, Object> model) {
+     ArrayList<Long> sequencia = new ArrayList<Long>();
+     for (int i = 0; i < 30; i++) {
+       sequencia.add(fa.fatorial(i));
+     }
+     model.put("sequencia", sequencia);
+    return "fato";
   }
 
 }

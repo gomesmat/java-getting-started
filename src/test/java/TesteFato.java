@@ -7,26 +7,26 @@ public class TesteFibo {
     @Test
     public void Teste1() {
         Fibonacci f = new Fibonacci();
-        assertEquals(1L, f.fatorial(1));
+        assertEquals(1L, f.fibo(1));
     }
     @Test
     public void Teste2() {
         Fibonacci f = new Fibonacci();
-        assertEquals(2L, f.fatorial(2));
+        assertEquals(2L, f.fibo(3));
     }
     @Test
     public void Teste3() {
         Fibonacci f = new Fibonacci();
-        assertEquals(120L, f.fatorial(5));
+        assertEquals(34L, f.fibo(9));
     }
     @Test
     public void Teste4() {
         Fibonacci f = new Fibonacci();
-        assertEquals(6L, f.fatorial(3));
+        assertEquals(233L, f.fibo(13));
     }
     @Test
     public void Teste5() {
         Fibonacci f = new Fibonacci();
-        assertEquals(24L, f.fatorial(4));
+        assertEquals(514229L, f.fibo(29));
     }
 }
