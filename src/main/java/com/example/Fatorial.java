@@ -1,15 +1,12 @@
 package com.example;
 
 
-public class Fibonacci{
-    public Fibonacci(){
+public class Fatorial{
+    public Fatorial(){
 
     }
-    public static long fibo(int n) {
-        if (n < 2) {
-            return n;
-        } else {
-            return fibo(n - 1) + fibo(n - 2);
-        }
+    public static long fatorial(long n) {
+        if (n <= 1) return n;
+        else return n * fatorial(n-1);
     }
 }
