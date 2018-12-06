@@ -33,7 +33,7 @@ import java.util.Map;
 @SpringBootApplication
 public class Main {
 
-  private Fibonacci f = new Fibonacci();
+//   private Fibonacci f = new Fibonacci();
   private Fatorial fa = new Fatorial();
   
   public static void main(String[] args) throws Exception {
@@ -45,15 +45,15 @@ public class Main {
     return "index";
   }
 
-  @RequestMapping("/fibo")
-  String fibo(Map<String, Object> model) {
-     ArrayList<Long> sequencia = new ArrayList<Long>();
-     for (int i = 0; i < 30; i++) {
-       sequencia.add(f.fibo(i));
-     }
-     model.put("sequencia", sequencia);
-    return "fibo";
-  }
+//   @RequestMapping("/fibo")
+//   String fibo(Map<String, Object> model) {
+//      ArrayList<Long> sequencia = new ArrayList<Long>();
+//      for (int i = 0; i < 30; i++) {
+//        sequencia.add(f.fibo(i));
+//      }
+//      model.put("sequencia", sequencia);
+//     return "fibo";
+//   }
   
   @RequestMapping("/fato")
   String fato(Map<String, Object> model) {
