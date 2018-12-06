@@ -12,21 +12,16 @@ public class TesteFato {
     @Test
     public void Teste2() {
         Fatorial f = new Fatorial();
-        assertEquals(2L, f.fatorial(3));
+        assertEquals(6L, f.fatorial(3));
     }
     @Test
     public void Teste3() {
         Fatorial f = new Fatorial();
-        assertEquals(34L, f.fatorial(9));
+        assertEquals(2L, f.fatorial(2));
     }
     @Test
     public void Teste4() {
         Fatorial f = new Fatorial();
-        assertEquals(233L, f.fatorial(13));
-    }
-    @Test
-    public void Teste5() {
-        Fatorial f = new Fatorial();
-        assertEquals(514229L, f.fatorial(29));
+        assertEquals(6L, f.fatorial(3));
     }
 }
